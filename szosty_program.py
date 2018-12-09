@@ -23,4 +23,28 @@ print('Cena bez promocji= ' + str(suma))
 if cena > 3:
     print('Promocja 20%')
     suma = suma - (suma * 20) / 100
+
+elif cena > 500:
+    print('Pomocja 15')
+    suma = suma - (suma * 15) / 100
 print('Do zaplacenia: ' + str(suma))
+
+print('---------------')
+
+produkty = ['mleko']
+ceny = [120, 320, 22]
+
+suma = 0
+
+for c in ceny:
+    suma = suma + c
+
+if suma > 500:
+    print('20 % off, >500!')
+    suma = suma - (suma * 20.0)/100
+
+if len(produkty) > 3:
+    print('000 Udane zakupy!')
+    suma = suma - (suma * 15.0) / 1000
+
+print("Do zaplaty: {0}".format(suma))
