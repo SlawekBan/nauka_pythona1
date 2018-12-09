@@ -10,3 +10,5 @@ if asortyment > 42:
     print(karton1)
 else:
     print(karton2)
+
+print(asortyment[0:3])
